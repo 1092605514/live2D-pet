@@ -1,0 +1,29 @@
+{
+  "backend_url": "http://localhost:12393",
+  "window_width": 280,
+  "window_height": 420,
+  "save_interval_ms": 60000,
+  "tick_interval_ms": 15000,
+  "poll_interval_ms": 300,
+  "command_cooldown_sec": 3.0,
+  "command_queue_interval_ms": 2500,
+  "tts_voice": "冰糖",
+  "tts_speed": 1.0,
+  "proactive_interval_sec": 90,
+  "proactive_enabled": true,
+  "audio_flush_timeout_ms": 3000,
+  "model_scales": {
+    "hiyori": 1.75,
+    "deyizhi_3": 1.1,
+    "biaoqiang_3": 2.0,
+    "haru": 0.32,
+    "mao_pro": 0.5,
+    "natori": 0.8
+  },
+  "model_offsets": {
+    "mao_pro": [
+      120,
+      180
+    ]
+  }
+}

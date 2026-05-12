@@ -1,0 +1,45 @@
+# ============ Dependencies ============
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# ============ Build Output ============
+dist/
+build/
+*.exe
+*.dmg
+*.AppImage
+*.snap
+*.app
+
+# ============ Environment ============
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+
+# ============ IDE / Editor ============
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ============ Python ============
+*.egg-info/
+.eggs/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ============ Local Config ============
+config/settings.local.json
+
+# ============ Logs ============
+*.log
+npm-debug.log*

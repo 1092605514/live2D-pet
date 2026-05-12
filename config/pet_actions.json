@@ -1,0 +1,64 @@
+{
+  "model": "mao_pro",
+  "description": "Action/expression catalog for mao_pro Live2D model. Edit to remap for other models.",
+
+  "expressions": {
+    "index_to_name": {
+      "0": "neutral",
+      "1": "sad",
+      "2": "angry",
+      "3": "happy",
+      "4": "shy",
+      "5": "surprised",
+      "6": "sleepy",
+      "7": "love"
+    },
+    "aliases": {
+      "default": 0, "normal": 0,
+      "glad": 3, "joy": 3, "delighted": 3,
+      "blush": 4, "embarrassed": 4,
+      "shocked": 5, "amazed": 5,
+      "mad": 2,
+      "unhappy": 1, "cry": 1,
+      "tired": 6, "drowsy": 6,
+      "affection": 7, "heart": 7,
+      "开心": 3, "快乐": 3, "高兴": 3,
+      "害羞": 4,
+      "惊讶": 5, "吃惊": 5,
+      "生气": 2, "愤怒": 2,
+      "难过": 1, "悲伤": 1, "伤心": 1,
+      "困": 6, "困倦": 6,
+      "喜欢": 7, "爱": 7,
+      "眨眼": 3,
+      "平静": 0
+    }
+  },
+
+  "motions": {
+    "motion_groups": {
+      "Idle": ["idle"],
+      "": ["wave", "dance", "nod", "shake_head", "spin", "jump"]
+    },
+    "aliases": {
+      "still": "idle", "stand": "idle",
+      "greet": "wave", "hello": "wave", "bye": "wave", "goodbye": "wave",
+      "boogie": "dance", "groove": "dance",
+      "agree": "nod", "yes": "nod",
+      "disagree": "shake_head", "no": "shake_head", "deny": "shake_head",
+      "twirl": "spin",
+      "hop": "jump", "leap": "jump",
+      "yawn": "stretch", "stretch": "stretch",
+      "bow": "bow", "clap": "clap",
+      "挥手": "wave", "打招呼": "wave",
+      "跳舞": "dance",
+      "点头": "nod", "同意": "nod",
+      "摇头": "shake_head", "不同意": "shake_head",
+      "转圈": "spin",
+      "跳": "jump", "跳跃": "jump",
+      "伸懒腰": "stretch",
+      "鞠躬": "bow",
+      "拍手": "clap"
+    },
+    "random_actions": ["stretch", "bow", "clap"]
+  }
+}

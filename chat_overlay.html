@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: transparent;
+      font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      -webkit-app-region: no-drag;
+    }
+    .chat-bar {
+      display: flex;
+      align-items: center;
+      background: rgba(30, 30, 40, 0.92);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 150, 180, 0.4);
+      border-radius: 28px;
+      padding: 6px 8px 6px 18px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 20px rgba(255, 150, 180, 0.15);
+      width: 360px;
+    }
+    .chat-bar input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #fff;
+      font-size: 15px;
+      padding: 8px 4px;
+      caret-color: #FF96B4;
+    }
+    .chat-bar input::placeholder {
+      color: rgba(255,255,255,0.35);
+    }
+    .chat-bar button {
+      background: linear-gradient(135deg, #FF96B4, #FF6B8A);
+      border: none;
+      border-radius: 22px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 8px 18px;
+      cursor: pointer;
+      transition: transform 0.15s, box-shadow 0.15s;
+      white-space: nowrap;
+    }
+    .chat-bar button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 16px rgba(255, 107, 138, 0.5);
+    }
+    .chat-bar button:active {
+      transform: scale(0.96);
+    }
+    .quick-actions {
+      display: flex;
+      gap: 6px;
+      margin-right: 8px;
+    }
+    .quick-actions button {
+      background: rgba(255, 150, 180, 0.25);
+      border: 1px solid rgba(255, 150, 180, 0.3);
+      border-radius: 16px;
+      color: #ffb0c8;
+      font-size: 16px;
+      width: 32px; height: 32px;
+      cursor: pointer;
+      transition: background 0.15s, transform 0.1s;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .quick-actions button:hover {
+      background: rgba(255, 150, 180, 0.5);
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-bar">
+    <div class="quick-actions">
+      <button id="qaHappy" title="开心">😊</button>
+      <button id="qaSad" title="难过">😢</button>
+      <button id="qaWave" title="挥手">👋</button>
+      <button id="qaSpin" title="转圈">🔄</button>
+    </div>
+    <input id="chatInput" type="text" placeholder="和喵酱说点什么... 🐱" maxlength="500" autofocus />
+    <button id="sendBtn">发送</button>
+  </div>
+  <script src="chat_preload.js"></script>
+</body>
+</html>

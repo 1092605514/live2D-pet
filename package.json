@@ -1,0 +1,55 @@
+{
+  "name": "live2d-pet",
+  "version": "1.0.0",
+  "description": "喵酱 Live2D Desktop Pet - Electron wrapper",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pet": "electron . --pet-mode",
+    "build": "electron-builder --win portable",
+    "build:win": "electron-builder --win",
+    "dist": "node scripts/build-versioned.js"
+  },
+  "build": {
+    "appId": "com.miaojiang.live2d-pet",
+    "productName": "喵酱Live2D",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "chat_overlay.html",
+      "chat_preload.js",
+      "node_modules/**/*"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": ["x64"]
+        },
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        }
+      ],
+      "icon": null
+    },
+    "portable": {
+      "artifactName": "喵酱Live2D-v${version}-portable.exe"
+    },
+    "nsis": {
+      "artifactName": "喵酱Live2D-v${version}-setup.exe",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.1.8"
+  },
+  "dependencies": {
+    "ws": "^8.20.0"
+  }
+}
